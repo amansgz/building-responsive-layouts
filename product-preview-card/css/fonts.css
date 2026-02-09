@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/montserrat/Montserrat-Medium.ttf") format(trueType);
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/montserrat/Montserrat-Bold.ttf") format(trueType);
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("../assets/fonts/fraunces/Fraunces_72pt-Bold.ttf") format(trueType);
+  font-weight: 700;
+  font-display: swap;
+}
