@@ -24,6 +24,13 @@
   gap: var(--grid-gap);
 }
 
+.footer {
+  padding: var(--spacing-sm);
+
+  text-align: center;
+  background-color: var(--clr-grey-100);
+}
+
 /*--------------------------------------------*\
   #MEDIA-QUERIES 
   
