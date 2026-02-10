@@ -1,0 +1,85 @@
+/*---------------------------*\
+  #LAYOUT 
+\*---------------------------*/
+
+.testimonials {
+  background-color: var(--clr-grey-100);
+}
+
+.container {
+  min-height: 100dvh;
+  margin-inline: auto;
+
+  padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+.grid-system {
+  --grid-cols: 1;
+  --grid-rows: auto;
+  --grid-gap: var(--spacing-md);
+
+  display: grid;
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  grid-template-rows: var(--grid-rows);
+  gap: var(--grid-gap);
+}
+
+/*--------------------------------------------*\
+  #MEDIA-QUERIES 
+  
+  - Grid testimonials: 48rem (3col) - 64rem (4col)
+  - Featured card with bg image quotation 
+\*--------------------------------------------*/
+
+@media (min-width: 48rem) {
+  .grid-system {
+    --grid-cols: 3;
+    --grid-gap: var(--spacing-md);
+  }
+
+  .grid-testimonials {
+    grid-template-areas:
+      "featured featured muted "
+      "default secondary secondary"
+      "sidebar sidebar sidebar";
+    max-inline-size: 86rem;
+  }
+
+  .testimonial--featured {
+    grid-area: featured;
+
+    /* Image quotation */
+    background-image: url("../assets/images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+  }
+
+  .testimonial--muted {
+    grid-area: muted;
+  }
+
+  .testimonial--default:first-of-type {
+    grid-area: default;
+  }
+
+  .testimonial--secondary {
+    grid-area: secondary;
+  }
+
+  .testimonial--default:last-of-type {
+    grid-area: sidebar;
+  }
+}
+
+@media (min-width: 64rem) {
+  .grid-system {
+    --grid-cols: 4;
+    --grid-gap: var(--spacing-lg);
+  }
+
+  .grid-testimonials {
+    grid-template-areas:
+      "featured featured muted sidebar"
+      "default secondary secondary sidebar";
+  }
+}
