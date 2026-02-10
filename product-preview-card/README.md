@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: []()
-- Live Site URL: [https://amansgz.github.io/building-responsive-layout/product-preview-card/index.html](https://amansgz.github.io/building-responsive-layout/product-preview-card/index.html)
+- Live Site URL: [https://amansgz.github.io/building-responsive-layouts/product-preview-card/index.html](https://amansgz.github.io/building-responsive-layouts/product-preview-card/index.html)
 
 ## My process
 
