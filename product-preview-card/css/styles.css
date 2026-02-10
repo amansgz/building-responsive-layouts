@@ -185,6 +185,33 @@ html {
   }
 }
 
+/*--------------------------*\
+  #ATTRIBUTION 
+\*--------------------------*/
+
+.attribution {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  color: var(--green-700);
+}
+
+.attribution__link {
+  text-decoration: none;
+  color: var(--green-700);
+  transition: color 0.2s ease;
+}
+
+.attribution__link:hover,
+.attribution__link:focus-visible {
+  color: var(--green-500);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .attribution__link {
+    transition-duration: 0.01ms;
+  }
+}
+
 /*---------------------------*\
   #LAYOUT 
 \*---------------------------*/
@@ -197,6 +224,13 @@ html {
   min-height: 100vh;
 
   padding-block: var(--spacing-lg);
+  background-color: var(--cream);
+}
+
+.footer {
+  padding: var(--spacing-sm);
+
+  text-align: center;
   background-color: var(--cream);
 }
 
