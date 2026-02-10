@@ -5,9 +5,11 @@
 * GLOBAL-STYLES
 * FEATURES-HEADER-TYPOGRAPHY 
 * FEATURE-CARD 
+* ATTRIBUTION
 * LAYOUT
 * MEDIA QUERIES
-*/
+*
+**/
 
 /*--------------------------*\
   #RESET 
@@ -149,6 +151,33 @@ html {
   margin-block-start: var(--spacing-md);
 }
 
+/*--------------------------*\
+  #ATTRIBUTION 
+\*--------------------------*/
+
+.attribution {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-regular);
+  color: var(--grey-500);
+}
+
+.attribution__link {
+  text-decoration: none;
+  color: var(--grey-500);
+  transition: color 0.2s ease;
+}
+
+.attribution__link:hover,
+.attribution__link:focus-visible {
+  color: var(--blue);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .attribution__link {
+    transition-duration: 0.01ms;
+  }
+}
+
 /*---------------------------*\
   #LAYOUT 
 \*---------------------------*/
@@ -178,6 +207,13 @@ html {
   place-items: center;
   gap: var(--spacing-lg);
   padding-block: var(--spacing-lg);
+}
+
+.footer {
+  padding: var(--spacing-sm);
+
+  text-align: center;
+  background-color: var(--grey-50);
 }
 
 /*---------------------------*\
