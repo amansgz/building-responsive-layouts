@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []()
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-grid-testimonials-T80R2f8_Ox](https://www.frontendmentor.io/solutions/responsive-grid-testimonials-T80R2f8_Ox)
 - Live Site URL:
   [https://amansgz.github.io/building-responsive-layouts/testimonials-grid-section/index.html](https://amansgz.github.io/building-responsive-layouts/testimonials-grid-section/index.html)
 
